@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    
+    <form id="registrationForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br>
+        
+        <label for="dob">Date of Birth (Between 18 and 55 years old):</label>
+        <input type="date" id="dob" name="dob" required><br>
+        
+        <label for="acceptedTerms">Accepted terms & Conditions</label>
+        <input type="checkbox" id="acceptedTerms" name="acceptedTerms" required><br>
+        
+        <button type="submit">submit</button>
+    </form>
+    
+    <h2>Entries</h2>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Password</th>
+                <th>dob</th>
+                <th>accepted terms?</th>
+            </tr>
+        </thead>
+        <tbody id="userTableBody">
+            <!-- Table rows will be added dynamically through JavaScript -->
+        </tbody>
+    </table>
+
+    <script src="index.js"></script>
+</body>
+</html>
